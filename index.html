@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c">
+          <div class="header__brand">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <a href="#" class="header__menu hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+        <div class="header__hero">
+          <h1 class="title">We are creatives</h1>
+          <div class="header__arrow">
+            <img src="./images/icon-arrow-down.svg" alt="arrow" />
+          </div>
+        </div>
+      </header>
+      <section class="showcase">
+        <div class="showcase__item">
+          <img
+            class="showcase-image"
+            src="./images/desktop/image-transform.jpg"
+            alt="transform"
+          />
+        </div>
+        <div class="showcase__item info">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="showcase__item">
+          <img
+            class="showcase-image"
+            src="./images/desktop/image-stand-out.jpg"
+            alt="stand-out"
+          />
+        </div>
+
+        <div class="showcase__item info">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="showcase__item more-info design">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <div class="showcase__item more-info photography">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2>Client testimonials</h2>
+        <div class="reviews">
+          <div class="review">
+            <img
+              src="./images/image-emily.jpg"
+              alt="emily"
+              class="review__image"
+            />
+            <p class="review__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div class="review__signature">
+              <p class="review__name">Emily R.</p>
+              <p class="review__role">Marketing Director</p>
+            </div>
+          </div>
+          <div class="review">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="thomas"
+              class="review__image"
+            />
+            <p class="review__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="review__signature">
+              <p class="review__name">Thomas S.</p>
+              <p class="review__role">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="review">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="jennie"
+              class="review__image"
+            />
+            <p class="review__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="review__signature">
+              <p class="review__name">Jennie F.</p>
+              <p class="review__role">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__item">
+          <img
+            src="./images/desktop/image-gallery-milkbottles.jpg"
+            alt="milk"
+          />
+        </div>
+        <div class="gallery__item">
+          <img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+        </div>
+        <div class="gallery__item">
+          <img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
+        </div>
+        <div class="gallery__item">
+          <img
+            src="./images/desktop/image-gallery-sugarcubes.jpg"
+            alt="sugar"
+          />
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__brand">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="footer__nav">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+        <div class="footer__social">
+          <a href="#">
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-twitter.svg" alt="twitter" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-pinterest.svg" alt="pinterest" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!-- 
+
+
+
+  
+
+  
+  
+  
+
+ 
+  
+
+  
+ 
+
+  About
+  Services
+  Projects
+  Contact -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="app/js/script.js"></script>
+  </body>
+</html>

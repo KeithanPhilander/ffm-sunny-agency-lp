@@ -1,0 +1,258 @@
+//header
+
+.header {
+  background: url(../../../images/mobile/image-header.jpg) no-repeat center
+    center;
+  @include breakpoint-up(large) {
+    background: url(../../images/desktop/image-header.jpg) no-repeat center
+      center;
+  }
+  background-size: cover;
+  height: 70vh;
+
+  nav {
+    padding: rem(30);
+  }
+
+  &__menu {
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: #fff;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__links {
+    color: $white;
+    a {
+      &:not(:last-child) {
+        margin-right: rem(25);
+      }
+    }
+
+    a:last-of-type {
+      color: $vdd-blue;
+      padding: rem(15) rem(20);
+      border-radius: rem(40);
+      font-family: $font-fraunces;
+      background-color: $white;
+    }
+  }
+
+  &__hero {
+    h1 {
+      font-family: $font-fraunces;
+      font-size: rem(50);
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: rem(70);
+      color: $white;
+      padding-left: rem(20);
+      padding-right: rem(20);
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  &__arrow {
+    width: rem(50);
+    padding-top: rem(60);
+    margin: 0 auto;
+  }
+}
+
+// showcase
+
+.showcase {
+  display: grid;
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+
+    @include breakpoint-up(medium) {
+      &:nth-child(2) {
+        order: -1;
+      }
+    }
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .info {
+    // min-height: rem(602.5);
+    padding: rem(45) rem(35);
+
+    > h2 {
+      font-family: $font-fraunces;
+      font-size: rem(40);
+      font-weight: 900;
+    }
+
+    > p {
+      font-size: rem(20);
+      color: $vd-grayish-blue;
+      line-height: rem(40);
+    }
+
+    > a {
+      font-size: rem(20);
+      text-transform: uppercase;
+      font-weight: 900;
+      font-family: $font-fraunces;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 3px;
+      text-decoration-color: $yellow;
+    }
+  }
+
+  .more-info {
+    min-height: rem(702.5);
+    color: var(--ds-cyan);
+    justify-content: flex-end;
+    padding: 0 rem(20);
+    padding-bottom: rem(80);
+
+    > h2 {
+      font-family: $font-fraunces;
+      font-weight: 900;
+      font-size: rem(40);
+    }
+
+    > p {
+      font-size: rem(20);
+      line-height: rem(35);
+    }
+  }
+
+  .design {
+    background: url(../../images/mobile/image-graphic-design.jpg) no-repeat
+      center center;
+    background-size: cover;
+    color: $ds-cyan;
+  }
+  .photography {
+    background: url(../../images/mobile/image-photography.jpg) no-repeat center
+      center;
+    background-size: cover;
+    color: $dark-blue;
+  }
+}
+
+// client testimonials
+
+.testimonials {
+  padding: rem(100) rem(20);
+  h2 {
+    font-family: $font-fraunces;
+    font-size: rem(20);
+    text-align: center;
+    color: $grayish-blue;
+    letter-spacing: rem(5);
+    text-transform: uppercase;
+  }
+
+  .reviews {
+    @include breakpoint-up(large) {
+      display: flex;
+    }
+    .review {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: rem(300);
+      gap: rem(30);
+      padding: rem(50) 0;
+
+      &__image {
+        width: rem(100);
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      > p {
+        color: $vd-grayish-blue;
+        padding: 0 rem(10);
+        font-size: rem(20);
+        line-height: rem(40);
+      }
+
+      &__name {
+        font-size: rem(25);
+        font-weight: 900;
+        font-family: $font-fraunces;
+        margin-bottom: rem(10);
+      }
+
+      &__role {
+        color: $grayish-blue;
+        font-size: rem(19);
+      }
+    }
+  }
+}
+
+//gallery
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include breakpoint-up(medium) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__item {
+    img {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+  padding: rem(100) rem(50);
+  text-align: center;
+  background-color: $dm-cyan;
+  color: darken($dm-cyan, 40%);
+
+  &__brand {
+    width: rem(250);
+    margin: 0 auto;
+  }
+
+  &__nav {
+    a {
+      font-size: rem(20);
+      color: var();
+      &:not(:last-child) {
+        margin-right: rem(35);
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    padding-top: rem(50);
+    justify-content: center;
+    gap: rem(40);
+    img {
+      width: rem(25);
+    }
+  }
+}
